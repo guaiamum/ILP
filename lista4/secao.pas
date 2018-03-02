@@ -1,0 +1,1 @@
+program secao;var	n,k,i: longint;	vetor: array [1..100000] of longint;begin	read(n); k:=0;	for i:= 1 to n do	begin		read(vetor[i]);		k:=k + vetor[i]	end;	writeln(k);end.

@@ -1,0 +1,1 @@
+program primos;var n,i,resto,x: longint;begin	read(n); x:=0;	if (n=2) or (n=3) then		writeln('sim')	else	begin		for i:= 1 to (n-2) do		begin			resto:= n mod(n-i);			if resto=0 then				x:=x+1			else				x:=x+0		end;		if x=0 then			writeln('sim')		else			writeln('nao');	end;end.
